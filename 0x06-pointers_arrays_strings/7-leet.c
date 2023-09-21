@@ -3,26 +3,26 @@
 /**
   *leet - main function
   *
-  * @s: Function parameter
+  * @n: Function parameter
   *
-  *Return: value of s
+  *Return: value of n
  */
 
-char *leet(char *s)
+char *leet(char *n)
 {
 	int k, r;
 	char s1[] = "aAeEoOtTlL";
 	char s2[] = "4433007711";
 
-	for (k = 0; s[k] != '\0'; k++)
+	for (k = 0; n[k] != '\0'; k++)
 	{
 	for (r = 0; r < 10; r++)
 	{
-	if (s[k] == s1[r])
+	if (n[k] == s1[r])
 	{
-	s[k] = s2[r];
+	n[k] = s2[r];
 	}
 	}
 	}
-	return (s);
+	return (n);
 }
